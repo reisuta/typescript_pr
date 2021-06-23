@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/reisuta/typescript_pr/issues"
   },
-  "homepage": "https://github.com/reisuta/typescript_pr#readme"
+  "homepage": "https://github.com/reisuta/typescript_pr#readme",
+  "devDependencies": {
+    "typescript": "^3.7.5"
+  }
 }
