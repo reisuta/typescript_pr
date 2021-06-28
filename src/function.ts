@@ -4,13 +4,13 @@ export {};
 //   return weight / (height * height);
 // }
 
-let bmi: (height: number, weight: number, printable?:boolean) => number = (height:number, weight:number, printable?:boolean):number =>{
-  const bmi = weight / (height * height);
-  if (printable){
-    console.log({bmi});
-  }
-  return bmi;
-};
+// let bmi: (height: number, weight: number, printable?:boolean) => number = (height:number, weight:number, printable?:boolean):number =>{
+//   const bmi = weight / (height * height);
+//   if (printable){
+//     console.log({bmi});
+//   }
+//   return bmi;
+// };
 
 // bmi(1.75, 86, true);
 
@@ -20,10 +20,19 @@ let bmi: (height: number, weight: number, printable?:boolean) => number = (heigh
 
 // console.log(nextsalary(3,5));
 
-function double(value:number):number{
- return value*2;
+
+class Person{
+  n:string;
+  a:number;
+  constructor(name:string, age:number){
+    this.n = name;
+    this.a= age;
+  }
+  profile():string{
+    return `name:${this.n}age:${this.a}`;
+  }
 }
 
-console.log(double(200));
+let taro = new Person('taro',23);
 
-
+console.log(taro.profile());
